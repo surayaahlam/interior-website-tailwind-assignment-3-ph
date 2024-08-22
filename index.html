@@ -25,7 +25,8 @@
                     primary: 'rgb(33, 33, 33)',
                     secondary: 'rgb(73, 73, 73)',
                     tertiary: 'rgb(115, 115, 115)', 
-                    quaternary: 'rgb(28, 28, 28) ',quinary: 'rgb(233, 233, 233)',
+                    quaternary: 'rgb(28, 28, 28) ',
+                    quinary: 'rgb(233, 233, 233)',
                     body: 'rgb(244, 244, 244)',
                     body_neutral: 'rgb(248, 248, 248)',
                     basic: 'rgb(171, 239, 95)',
@@ -45,6 +46,7 @@
 
 </head>
 <body class="font-manrope">
+    <!-- header section starts here -->
     <header class="container mx-auto bg-gradient-to-b from-body_neutral to-white py-5 lg:pt-8 lg:pb-28">
       <!-- navbar section starts here -->
       <nav class="navbar w-11/12 mx-auto">
@@ -177,7 +179,7 @@
           <p class="text-secondary text-base font-medium mt-6">The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
         </div>
 
-        <div class="mt-8 grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div class="card bg-[#E7C1D3] p-6">
             <div>
               <img src="assets/concept.png" alt="">
@@ -210,7 +212,7 @@
       </section>
 
       <!-- lets discuss new project section starts here -->
-      <section class="mt-28 p-1.5 bg-white ">
+      <section class="mt-28 p-1.5 bg-white">
         <div class="hero py-8 lg:py-24" style="background-image: url('./assets/bg.jpg');">
           <div class="hero-content">
             <div class="w-full lg:w-[970px]">
@@ -225,13 +227,13 @@
                 <p class="text-secondary text-base font-medium mt-6">The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
               </div>
 
-              <form class="mt-8 grid grid-cols-1 gap-5 lg:grid-cols-2">
+              <form class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
                 <input type="text" placeholder="First Name*" class="input w-full max-w-[480px] rounded-[64px] text-basic font-semibold text-[#A0A0A0]" name="" id="">
                 <input type="text" placeholder="Last Name*" class="input w-full max-w-[480px] rounded-[64px] text-basic font-semibold text-[#A0A0A0]" name="" id="">
                 <input type="tel" placeholder="Phone Number*" class="input w-full max-w-[480px] rounded-[64px] text-basic font-semibold text-[#A0A0A0]" name="" id="">
                 <input type="email" placeholder="Email Address*" class="input w-full max-w-[480px] rounded-[64px] text-basic font-semibold text-[#A0A0A0]" name="" id="">
-                <textarea class="textarea h-60 max-h-60 rounded-[32px] text-basic font-semibold text-[#A0A0A0] lg:col-span-2" placeholder="Write your message here" name="" id=""></textarea>
-                <button class="btn text-xl font-extrabold text-quaternary flex items-center gap-2 bg-basic border-none rounded-[32px] px-5 lg:col-span-2">
+                <textarea class="textarea h-60 max-h-60 rounded-[32px] text-basic font-semibold text-[#A0A0A0] md:col-span-2" placeholder="Write your message here" name="" id=""></textarea>
+                <button class="btn text-xl font-extrabold text-quaternary flex items-center gap-2 bg-basic border-none rounded-[32px] px-5 md:col-span-2">
                   Send Mail
                   <div class="w-8 h-8 bg-quaternary rounded-[50%] relative">
                     <i class="fa-solid fa-arrow-right text-white text-base -rotate-45 absolute top-1 left-[9px]"></i>
@@ -243,8 +245,38 @@
         </div>
       </section>
     </main>
-    <footer>
 
+    <!-- footer section starts here -->
+    <footer class="container mx-auto footer footer-center bg-quaternary py-16 lg:py-24">
+      <div>
+        <a class="text-3xl text-quinary font-extrabold flex items-center gap-2">
+          <div class="w-8 h-8 bg-basic rounded-[50%] relative">
+            <i class="fa-solid fa-arrow-right text-quaternary text-base -rotate-45 absolute top-1 left-[9px]"></i>
+          </div> 
+          Rinterio
+        </a>
+      </div>
+
+      <div class="w-11/12">
+        <p class="text-tertiary text-base font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring <br>weathered wood, sleek metal accents.</p>
+      </div>
+
+      <div class="flex flex-col md:flex-row lg:flex-row gap-8 lg:gap-32 text-quinary font-normal text-base">
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">Services</a>
+        <a class="link link-hover">Portfolio</a>
+        <a class="link link-hover">Blogs</a>
+        <a class="link link-hover">Contact Us</a>
+      </div>
+
+      <button class="btn text-xl font-black text-quaternary flex items-center gap-2 bg-basic border-none rounded-[32px] px-5">
+        Book Consult
+        <div class="w-8 h-8 bg-quaternary rounded-[50%] relative">
+          <i class="fa-solid fa-arrow-right text-white text-base -rotate-45 absolute top-1 left-[9px]"></i>
+        </div>
+      </button>
+      
+      
     </footer>
 </body>
 </html>
