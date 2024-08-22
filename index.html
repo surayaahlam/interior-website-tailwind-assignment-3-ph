@@ -29,10 +29,11 @@
                     body: 'rgb(244, 244, 244)',
                     body_neutral: 'rgb(248, 248, 248)',
                     basic: 'rgb(171, 239, 95)',
-                    basic_light: 'rgba(171, 239, 95, 0.2)'
+                    basic_light: 'rgba(171, 239, 95, 0.5)',
+                    basic_extralight: 'rgba(171, 239, 95, 0.2)'
               },
               fontFamily: {
-                    Manrope: 'Manrope'
+                    manrope: 'Manrope'
               },
               backgroundImage: {
                     texture: "url('./assets/bg.jpg')"
@@ -43,9 +44,84 @@
       </script>
 
 </head>
-<body>
-    <h1 class="text-basic">Testing...</h1>
-    <div class="w-full h-full bg-texture text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere saepe delectus cumque exercitationem, alias corrupti numquam, facilis veniam harum illum repellat voluptate suscipit aspernatur error, ut quisquam similique? Eum, eligendi?
-    </div>
+<body class="font-manrope">
+    <header class="container mx-auto bg-gradient-to-b from-body_neutral to-white py-5 lg:pt-8 lg:pb-28">
+      <!-- navbar section starts here -->
+      <nav class="navbar w-11/12 mx-auto">
+        <div class="navbar-start">
+          <a class="text-3xl text-primary font-extrabold flex items-center gap-2">
+            <div class="w-8 h-8 bg-basic rounded-[50%] relative">
+              <i class="fa-solid fa-arrow-right text-quaternary text-base -rotate-45 absolute top-1 left-[9px]"></i>
+            </div> 
+            Rinterio
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu-horizontal text-tertiary font-normal text-base space-x-10">
+            <li><a class="font-extrabold text-secondary hover:font-extrabold text-secondary">Home</a></li>
+            <li><a class="hover:font-extrabold text-secondary">Services</a></li>
+            <li><a class="hover:font-extrabold text-secondary">Portfolio</a></li>
+            <li><a class="hover:font-extrabold text-secondary">Blogs</a></li>
+            <li><a class="hover:font-extrabold text-secondary">Contact Us</a></li>
+          </ul> 
+        </div>
+        
+        <div class="navbar-end">
+          <div class="hidden lg:flex space-x-4 ">
+            <div class="w-12 h-12 bg-white border border-quinary rounded-[50%] relative">
+              <i class="fa-solid fa-magnifying-glass text-xl text-tertiary absolute top-[9px] left-3"></i>
+            </div>
+            <div class="w-12 h-12 bg-white border border-quinary rounded-[50%] relative">
+              <i class="fa-solid fa-cart-shopping text-xl text-tertiary absolute top-[9px] left-3"></i>
+            </div>
+            <a class="btn text-xl font-extrabold text-quaternary flex items-center gap-2 bg-basic rounded-[32px] px-5">
+              Book Consult
+              <div class="w-8 h-8 bg-quaternary rounded-[50%] relative">
+                <i class="fa-solid fa-arrow-right text-white text-base -rotate-45 absolute top-1 left-[9px]"></i>
+              </div>
+            </a>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn-ghost lg:hidden">
+              <div class="w-12 h-12 bg-white border border-quinary rounded-[50%] relative">
+                <i class="fa-solid fa-bars text-xl text-tertiary absolute top-[9.5px] left-3.5"></i>
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section starts here -->
+      <section class="hero">
+          <div class="text-center">
+            <div class="max-w-11/12 hero-content flex-col space-y-5">
+              <img class="mt-5" src="assets/banner.png" alt="">
+              <h1 class="text-4xl font-black text-primary lg:text-6xl">A barn house of this design has a<br>striking appearance</h1>
+              <p class="text-base font-medium text-secondary">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal<br>accents, and large windows that flood the space with natural light.</p>
+              <button class="btn text-xl font-extrabold text-quaternary flex items-center gap-2 bg-basic_light rounded-[32px] px-5">
+                View Details
+                <div class="w-8 h-8 bg-basic rounded-[50%] relative">
+                  <i class="fa-solid fa-arrow-right text-quaternary text-base -rotate-45 absolute top-1 left-[9px]"></i>
+                </div>
+              </button>
+            </div>
+          </div>
+      </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
