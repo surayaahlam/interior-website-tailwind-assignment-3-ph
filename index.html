@@ -37,7 +37,7 @@
                     manrope: 'Manrope'
               },
               backgroundImage: {
-                    texture: "url('./assets/bg.jpg')"
+                    texture: "linear-gradient(to bottom, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('./assets/bg.jpg')"
               }
             }
           }
@@ -109,7 +109,7 @@
               <img class="mt-5" src="assets/banner.png" alt="">
               <h1 class="text-4xl font-black text-primary lg:text-6xl">A barn house of this design has a<br>striking appearance</h1>
               <p class="text-base font-medium text-secondary">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal<br>accents, and large windows that flood the space with natural light.</p>
-              <button class="btn text-xl font-manrope font-extrabold text-quaternary flex items-center gap-2 bg-basic_light border-none rounded-[32px] px-5">
+              <button class="btn w-full lg:w-auto text-xl font-manrope font-extrabold text-quaternary flex items-center gap-2 bg-basic_light border-none rounded-[32px] px-5">
                 View Details
                 <div class="w-8 h-8 bg-basic rounded-[50%] relative">
                   <i class="fa-solid fa-arrow-right text-quaternary text-base -rotate-45 absolute top-1 left-[9px]"></i>
@@ -211,9 +211,71 @@
         </div>
       </section>
 
+      <!-- our latest portfolio section starts here -->
+      <section class="mt-8 lg:mt-28 lg:bg-white lg:py-24">
+        <div class="w-11/12 mx-auto">
+          <div class="flex flex-col items-center text-center">
+            <div>
+              <button class="btn font-manrope text-xl font-bold text-secondary flex items-center gap-2 bg-basic_extralight border-none rounded-[32px] px-5">
+                <i class="fa-solid fa-arrow-right text-secondary text-base"></i>
+                How we works
+              </button>
+            </div>
+            <h2 class="font-extrabold text-3xl lg:text-5xl text-primary mt-4">Our Latest Portfolio</h2>
+            <p class="text-secondary text-base font-medium mt-6">The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
+          </div>
+
+          <div class="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-x-7 gap-y-6">
+            <div class="p-5 bg-white lg:p-6 border border-quinary rounded-2xl flex flex-col lg:flex-row items-center gap-6 lg:gap-8 lg:order-1 lg:col-span-8">
+               <img class="w-full" src="assets/img1.png" alt="">
+               <div class="flex flex-col">
+                  <h4 class="text-2xl font-extrabold text-secondary">Commercial</h4>
+                  <p class="text-base font-medium text-tertiary mt-4">Elevate your business environment with our Commercial interior design solutions. We blend functionality with aesthetic appeal, creating spaces that inspire productivity and reflect your brand’s unique identity.</p>
+                  <a class="link link-hover text-xl font-manrope font-extrabold text-primary flex items-center gap-2 mt-5">
+                    View Details
+                    <div class="w-8 h-8 bg-basic rounded-[50%] relative">
+                      <i class="fa-solid fa-arrow-right text-quaternary text-base -rotate-45 absolute top-1 left-[9px]"></i>
+                    </div>
+                  </a>
+               </div>
+            </div>
+
+            <div class="p-5 bg-white lg:p-6 border border-quinary rounded-2xl lg:order-2 lg:col-span-4">
+              <img class="w-full" src="assets/img2.png" alt="">
+            </div>
+
+            <div class="p-5 bg-white lg:p-6 border border-quinary rounded-2xl lg:hidden">
+              <img class="w-full" src="assets/img5.png" alt="">
+            </div>
+
+            <div class="p-5 bg-white lg:p-6 border border-quinary rounded-2xl flex flex-col lg:flex-row items-center gap-6 lg:gap-8 lg:order-4 lg:col-span-6">
+              <img class="w-full" src="assets/img4.png" alt="">
+              <div class="flex flex-col">
+                 <h4 class="text-2xl font-extrabold text-secondary">Residential</h4>
+                 <p class="text-base font-medium text-tertiary mt-4">The barn house captivates with its blend of rustic charm and modern.</p>
+                 <a class="link link-hover text-xl font-manrope font-extrabold text-primary flex items-center gap-2 mt-5">
+                   View Details
+                   <div class="w-8 h-8 bg-basic rounded-[50%] relative">
+                     <i class="fa-solid fa-arrow-right text-quaternary text-base -rotate-45 absolute top-1 left-[9px]"></i>
+                   </div>
+                 </a>
+              </div>
+           </div>
+
+           <div class="p-5 bg-white lg:p-6 border border-quinary rounded-2xl lg:order-3 lg:col-span-3">
+            <img class="w-full" src="assets/img3.png" alt="">
+          </div>
+
+          <div class="p-5 bg-white lg:p-6 border border-quinary rounded-2xl lg:order-5 lg:col-span-3">
+            <img class="w-full" src="assets/img5.png" alt="">
+          </div>
+          </div>
+        </div>
+      </section>
+
       <!-- lets discuss new project section starts here -->
-      <section class="mt-28 p-1.5 bg-white">
-        <div class="hero py-8 lg:py-24" style="background-image: url('./assets/bg.jpg');">
+      <section class="mt-8 lg:mt-28 p-1.5 bg-white">
+        <div class="hero py-8 lg:py-24 bg-texture">
           <div class="hero-content">
             <div class="w-full lg:w-[970px]">
               <div class="flex flex-col items-center text-center">
@@ -232,7 +294,7 @@
                 <input type="text" placeholder="Last Name*" class="input w-full max-w-[480px] rounded-[64px] text-basic font-semibold text-[#A0A0A0]" name="" id="">
                 <input type="tel" placeholder="Phone Number*" class="input w-full max-w-[480px] rounded-[64px] text-basic font-semibold text-[#A0A0A0]" name="" id="">
                 <input type="email" placeholder="Email Address*" class="input w-full max-w-[480px] rounded-[64px] text-basic font-semibold text-[#A0A0A0]" name="" id="">
-                <textarea class="textarea h-60 max-h-60 rounded-[32px] text-basic font-semibold text-[#A0A0A0] md:col-span-2" placeholder="Write your message here" name="" id=""></textarea>
+                <textarea placeholder="Write your message here" class="textarea h-60 max-h-60 rounded-[32px] text-base text-basic font-semibold text-[#A0A0A0] md:col-span-2" name="" id=""></textarea>
                 <button class="btn text-xl font-extrabold text-quaternary flex items-center gap-2 bg-basic border-none rounded-[32px] px-5 md:col-span-2">
                   Send Mail
                   <div class="w-8 h-8 bg-quaternary rounded-[50%] relative">
